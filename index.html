@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Body Formula Fitness | Premium Gym in Hasthinapuram, Chennai</title>
+  <meta name="description" content="Body Formula Fitness — Hasthinapuram's premier luxury gym. Strength training, cardio, personal coaching and more. Book your free trial today." />
+  <meta name="keywords" content="gym Hasthinapuram, fitness center Chennai, body formula fitness, personal trainer, weight loss, muscle building" />
+  <meta property="og:title" content="Body Formula Fitness | Premium Gym in Hasthinapuram" />
+  <meta property="og:description" content="Train with purpose. Become your strongest. Book a free trial at Body Formula Fitness, Hasthinapuram." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts & CSS -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Google Fonts: preconnect first for speed, then load stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     CONFIGURATION — Edit these values
+     ══════════════════════════════════════════ -->
+<script>
+  // ── SITE CONFIG ──────────────────────────────────────────────
+  // Edit this object to customize the website without touching HTML
+  const SITE_CONFIG = {
+    // WhatsApp number in international format WITHOUT + (e.g. "919876543210").
+    // Leave EMPTY ("") to disable the button until you add a real number.
+    whatsappNumber: "",
+
+    // Pre-filled WhatsApp message
+    whatsappMessage: "Hi! I'm interested in a Free Trial at Body Formula Fitness. Please let me know the next steps.",
+
+    // Gym details — edit these to match your real information
+    gymName:    "Body Formula Fitness",
+    gymAddress: "[Your Full Address Here], Hasthinapuram, Chennai — [PIN]", // ← EDIT
+    gymPhone:   "[Your Phone Number]",                                       // ← EDIT
+    gymEmail:   "[youremail@example.com]",                                   // ← EDIT
+    gymMapLink: "#",                                                         // ← EDIT with Google Maps link
+  };
+</script>
+
+<!-- ══════════════════════════════════════════
+     NAVBAR
+     ══════════════════════════════════════════ -->
+<nav id="navbar" aria-label="Main navigation">
+  <a class="nav-logo" href="#hero" aria-label="Body Formula Fitness – Home">
+    <span class="nav-logo-main">Body Formula</span>
+    <span class="nav-logo-sub">Fitness · Hasthinapuram</span>
+  </a>
+
+  <ul class="nav-links" role="list">
+    <li><a href="#membership" id="nav-membership">Memberships</a></li>
+    <li><a href="#trainers"   id="nav-trainers">Trainers</a></li>
+    <li><a href="#facilities" id="nav-facilities">Facilities</a></li>
+    <li><a href="#workout-videos" id="nav-videos">Videos</a></li>
+    <li><a href="#ai-receptionist" id="nav-ai">AI Desk</a></li>
+    <li><a href="#free-trial" id="nav-trial" class="btn btn-gold nav-cta">Free Trial</a></li>
+  </ul>
+
+  <button class="nav-hamburger" id="navHamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile menu -->
+<div class="nav-mobile-menu" id="navMobileMenu" aria-hidden="true">
+  <ul role="list">
+    <li><a href="#membership"     class="mobile-nav-link">Memberships</a></li>
+    <li><a href="#trainers"       class="mobile-nav-link">Trainers</a></li>
+    <li><a href="#facilities"     class="mobile-nav-link">Facilities</a></li>
+    <li><a href="#workout-videos" class="mobile-nav-link">Videos</a></li>
+    <li><a href="#ai-receptionist" class="mobile-nav-link">AI Desk</a></li>
+    <li><a href="#free-trial"     class="mobile-nav-link">Free Trial</a></li>
+  </ul>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     HERO SECTION
+     ══════════════════════════════════════════ -->
+<section id="hero" aria-label="Hero">
+
+  <!-- Video background — falls back to image, then CSS gradient -->
+  <video
+    id="hero-video"
+    autoplay muted loop playsinline
+    poster="images/gym image.jpg"
+    aria-hidden="true"
+  >
+    <source src="videos/gymhero mp4.mp4" type="video/mp4" />
+    <!-- If video fails, the poster image is used automatically -->
+  </video>
+
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="hero-overlay-bottom" aria-hidden="true"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge" aria-label="Location badge">
+      <span class="hero-badge-dot"></span>
+      Hasthinapuram's Premier Gym
+    </div>
+
+    <h1 class="hero-headline">
+      BUILD YOUR
+      <span class="highlight">STRONGER</span>
+      SELF.
+    </h1>
+
+    <p class="hero-tagline">Train with purpose. Become your strongest.</p>
+
+    <div class="hero-buttons">
+      <a href="#free-trial" class="btn btn-gold" id="hero-trial-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="13 17 18 12 13 7"></polyline><polyline points="6 17 11 12 6 7"></polyline></svg>
+        Book a Free Trial
+      </a>
+      <a href="#membership" class="btn btn-outline" id="hero-membership-btn">
+        Explore Memberships
+      </a>
+    </div>
+  </div>
+
+  <!-- Scroll hint -->
+  <div class="hero-scroll-hint" aria-hidden="true">
+    <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     STATS BAR
+     ══════════════════════════════════════════ -->
+<div id="stats-bar" aria-label="Gym at a glance">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item reveal">
+        <div class="stat-number">5+</div>
+        <div class="stat-label">Years of Excellence</div>
+      </div>
+      <div class="stat-item reveal reveal-delay-1">
+        <div class="stat-number">500+</div>
+        <div class="stat-label">Active Members</div>
+      </div>
+      <div class="stat-item reveal reveal-delay-2">
+        <div class="stat-number">10+</div>
+        <div class="stat-label">Expert Trainers</div>
+      </div>
+      <div class="stat-item reveal reveal-delay-3">
+        <div class="stat-number">3</div>
+        <div class="stat-label">Membership Tiers</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     MEMBERSHIP PLANS
+     ══════════════════════════════════════════ -->
+<section id="membership" aria-labelledby="membership-title">
+  <div class="container">
+    <span class="section-eyebrow">Membership Plans</span>
+    <h2 class="section-title" id="membership-title">
+      Choose Your <span>Journey</span>
+    </h2>
+    <p class="section-lead">
+      Flexible plans designed to match your goals and lifestyle. All plans include full gym access.
+    </p>
+    <div class="gold-divider"></div>
+
+    <div class="membership-grid">
+
+      <!-- PLAN 1: BASIC -->
+      <div class="plan-card reveal">
+        <div class="plan-icon">🏃</div>
+        <div class="plan-name">Basic</div>
+        <div class="plan-duration">Monthly Plan</div>
+        <div class="plan-price">
+          <span class="plan-currency">₹</span>
+          <!-- ↓ EDIT PRICE HERE -->
+          <span class="plan-amount">999</span>
+          <span class="plan-period">/mo</span>
+        </div>
+        <p class="plan-placeholder-note">⚠ Placeholder price — edit in index.html</p>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li><span class="check">✓</span> Full Gym Floor Access</li>
+          <li><span class="check">✓</span> Cardio Equipment</li>
+          <li><span class="check">✓</span> Free Weights Zone</li>
+          <li><span class="check">✓</span> Locker Room Access</li>
+          <li><span class="check">✓</span> 1 Orientation Session</li>
+        </ul>
+        <a href="#free-trial" class="btn btn-outline plan-btn" id="plan-basic-btn">Get Started</a>
+      </div>
+
+      <!-- PLAN 2: PREMIUM (Featured) -->
+      <div class="plan-card featured reveal reveal-delay-1">
+        <div class="plan-badge">Most Popular</div>
+        <div class="plan-icon">💪</div>
+        <div class="plan-name">Premium</div>
+        <div class="plan-duration">3-Month Plan</div>
+        <div class="plan-price">
+          <span class="plan-currency">₹</span>
+          <!-- ↓ EDIT PRICE HERE -->
+          <span class="plan-amount">2499</span>
+          <span class="plan-period">/3mo</span>
+        </div>
+        <p class="plan-placeholder-note">⚠ Placeholder price — edit in index.html</p>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li><span class="check">✓</span> Everything in Basic</li>
+          <li><span class="check">✓</span> 4 PT Sessions / Month</li>
+          <li><span class="check">✓</span> Diet Consultation</li>
+          <li><span class="check">✓</span> Body Composition Analysis</li>
+          <li><span class="check">✓</span> Group Classes Access</li>
+          <li><span class="check">✓</span> Priority Booking</li>
+        </ul>
+        <a href="#free-trial" class="btn btn-gold plan-btn" id="plan-premium-btn">Get Started</a>
+      </div>
+
+      <!-- PLAN 3: ELITE -->
+      <div class="plan-card reveal reveal-delay-2">
+        <div class="plan-icon">🏆</div>
+        <div class="plan-name">Elite</div>
+        <div class="plan-duration">Annual Plan</div>
+        <div class="plan-price">
+          <span class="plan-currency">₹</span>
+          <!-- ↓ EDIT PRICE HERE -->
+          <span class="plan-amount">7999</span>
+          <span class="plan-period">/yr</span>
+        </div>
+        <p class="plan-placeholder-note">⚠ Placeholder price — edit in index.html</p>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li><span class="check">✓</span> Everything in Premium</li>
+          <li><span class="check">✓</span> Unlimited PT Sessions</li>
+          <li><span class="check">✓</span> Custom Workout Programs</li>
+          <li><span class="check">✓</span> Sauna & Recovery Zone</li>
+          <li><span class="check">✓</span> Guest Passes (2/month)</li>
+          <li><span class="check">✓</span> Annual Health Screening</li>
+        </ul>
+        <a href="#free-trial" class="btn btn-outline plan-btn" id="plan-elite-btn">Get Started</a>
+      </div>
+
+    </div><!-- /.membership-grid -->
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     TRAINER PROFILES
+     ══════════════════════════════════════════ -->
+<section id="trainers" aria-labelledby="trainers-title">
+  <div class="container">
+    <span class="section-eyebrow">Our Trainers</span>
+    <h2 class="section-title" id="trainers-title">
+      Meet the <span>Experts</span>
+    </h2>
+    <p class="section-lead">
+      Our certified coaches are here to guide, motivate and help you reach your peak performance.
+    </p>
+    <div class="gold-divider"></div>
+
+    <div class="trainers-grid">
+
+      <!-- TRAINER 1 — EDIT ALL DETAILS BELOW -->
+      <div class="trainer-card reveal">
+        <div class="trainer-img-wrap">
+          <img src="images/trainer-placeholder.jpg" alt="Trainer 1 — placeholder" loading="lazy" />
+          <div class="trainer-img-overlay"></div>
+          <div class="trainer-placeholder-note">Replace Photo</div>
+        </div>
+        <div class="trainer-info">
+          <div class="trainer-specialty">Strength & Conditioning</div>
+          <!-- ↓ EDIT TRAINER NAME -->
+          <div class="trainer-name">[Trainer Name]</div>
+          <!-- ↓ EDIT BIO -->
+          <p class="trainer-bio">
+            [Add a 2–3 sentence bio here describing the trainer's background, certifications and coaching philosophy.]
+          </p>
+          <div class="trainer-exp">
+            ⭐ <!-- ↓ EDIT YEARS -->
+            [X] Years Experience
+          </div>
+        </div>
+      </div>
+
+      <!-- TRAINER 2 — EDIT ALL DETAILS BELOW -->
+      <div class="trainer-card reveal reveal-delay-1">
+        <div class="trainer-img-wrap">
+          <img src="images/trainer-placeholder.jpg" alt="Trainer 2 — placeholder" loading="lazy" />
+          <div class="trainer-img-overlay"></div>
+          <div class="trainer-placeholder-note">Replace Photo</div>
+        </div>
+        <div class="trainer-info">
+          <div class="trainer-specialty">Weight Loss & Cardio</div>
+          <div class="trainer-name">[Trainer Name]</div>
+          <p class="trainer-bio">
+            [Add a 2–3 sentence bio here describing the trainer's background, certifications and coaching philosophy.]
+          </p>
+          <div class="trainer-exp">⭐ [X] Years Experience</div>
+        </div>
+      </div>
+
+      <!-- TRAINER 3 — EDIT ALL DETAILS BELOW -->
+      <div class="trainer-card reveal reveal-delay-2">
+        <div class="trainer-img-wrap">
+          <img src="images/trainer-placeholder.jpg" alt="Trainer 3 — placeholder" loading="lazy" />
+          <div class="trainer-img-overlay"></div>
+          <div class="trainer-placeholder-note">Replace Photo</div>
+        </div>
+        <div class="trainer-info">
+          <div class="trainer-specialty">Functional Fitness & Yoga</div>
+          <div class="trainer-name">[Trainer Name]</div>
+          <p class="trainer-bio">
+            [Add a 2–3 sentence bio here describing the trainer's background, certifications and coaching philosophy.]
+          </p>
+          <div class="trainer-exp">⭐ [X] Years Experience</div>
+        </div>
+      </div>
+
+    </div><!-- /.trainers-grid -->
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     WORKOUT VIDEOS
+     ══════════════════════════════════════════ -->
+<section id="workout-videos" aria-labelledby="videos-title">
+  <div class="container">
+    <span class="section-eyebrow">Workout Videos</span>
+    <h2 class="section-title" id="videos-title">
+      Train Like a <span>Champion</span>
+    </h2>
+    <p class="section-lead">
+      A preview of the energy, technique and intensity you'll find on our gym floor every day.
+    </p>
+    <div class="gold-divider"></div>
+
+    <div class="videos-grid">
+
+      <!-- Video 1 — uses your gymhero mp4.mp4 as a sample workout reel -->
+      <div class="video-card reveal">
+        <video
+          controls
+          preload="metadata"
+          poster="images/gym image.jpg"
+          aria-label="Gym training footage"
+        >
+          <source src="videos/gymhero mp4.mp4" type="video/mp4" />
+          <p>Your browser does not support the video tag.</p>
+        </video>
+        <div class="video-card-info">
+          <h3>Full-Body Training Session</h3>
+          <!-- ↓ EDIT VIDEO DESCRIPTION -->
+          <p>[Replace with your own workout video — edit path in index.html]</p>
+        </div>
+      </div>
+
+      <!-- Video 2 — Placeholder for a second video -->
+      <div class="video-card reveal reveal-delay-1">
+        <div class="video-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polygon points="10 8 16 12 10 16 10 8" fill="currentColor" stroke="none"></polygon>
+          </svg>
+          <p>Add your second workout video</p>
+          <p style="font-size:0.72rem; color:rgba(255,255,255,0.25);">
+            Place the file in the <code>videos/</code> folder and update the src here
+          </p>
+        </div>
+        <div class="video-card-info">
+          <h3>Strength & Conditioning</h3>
+          <p>[Replace with your own workout video — edit path in index.html]</p>
+        </div>
+      </div>
+
+    </div><!-- /.videos-grid -->
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     GYM FACILITIES
+     ══════════════════════════════════════════ -->
+<section id="facilities" aria-labelledby="facilities-title">
+  <div class="container">
+    <span class="section-eyebrow">World-Class Facilities</span>
+    <h2 class="section-title" id="facilities-title">
+      Built For <span>Performance</span>
+    </h2>
+    <p class="section-lead">
+      Premium equipment. Purpose-built spaces. Everything you need to train at your best.
+    </p>
+    <div class="gold-divider"></div>
+
+    <div class="facilities-layout">
+
+      <div class="facilities-image reveal">
+        <img src="images/facilities-hero.jpg" alt="Body Formula Fitness gym floor" loading="lazy" />
+        <div class="facilities-image-border" aria-hidden="true"></div>
+      </div>
+
+      <div class="facilities-list reveal reveal-delay-1">
+
+        <div class="facility-item">
+          <div class="facility-icon" aria-hidden="true">🏋️</div>
+          <div class="facility-text">
+            <h4>Free Weights Zone</h4>
+            <p>Full range of dumbbells, barbells and plates for every strength goal.</p>
+          </div>
+        </div>
+
+        <div class="facility-item">
+          <div class="facility-icon" aria-hidden="true">🏃</div>
+          <div class="facility-text">
+            <h4>Cardio Deck</h4>
+            <p>Treadmills, ellipticals, rowing machines and stationary cycles.</p>
+          </div>
+        </div>
+
+        <div class="facility-item">
+          <div class="facility-icon" aria-hidden="true">⚡</div>
+          <div class="facility-text">
+            <h4>Cable & Machine Area</h4>
+            <p>Commercial-grade cable systems and resistance machines for isolation work.</p>
+          </div>
+        </div>
+
+        <div class="facility-item">
+          <div class="facility-icon" aria-hidden="true">🧘</div>
+          <div class="facility-text">
+            <h4>Functional Training Zone</h4>
+            <p>Kettlebells, TRX, battle ropes and plyometric boxes for athletic training.</p>
+          </div>
+        </div>
+
+        <div class="facility-item">
+          <div class="facility-icon" aria-hidden="true">🚿</div>
+          <div class="facility-text">
+            <h4>Locker Rooms & Showers</h4>
+            <p>Clean, secure lockers and premium shower facilities for members.</p>
+          </div>
+        </div>
+
+        <div class="facility-item">
+          <div class="facility-icon" aria-hidden="true">📱</div>
+          <div class="facility-text">
+            <h4>Free High-Speed Wi-Fi</h4>
+            <p>Stay connected throughout the gym — stream, track, and motivate.</p>
+          </div>
+        </div>
+
+      </div>
+    </div><!-- /.facilities-layout -->
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     FREE TRIAL ENQUIRY FORM
+     ══════════════════════════════════════════ -->
+<section id="free-trial" aria-labelledby="trial-title">
+  <div class="container">
+    <span class="section-eyebrow">Free Trial</span>
+    <h2 class="section-title" id="trial-title">
+      Start Today — <span>On Us</span>
+    </h2>
+    <p class="section-lead">
+      Fill in your details and our team will get back to you to schedule your free trial session.
+    </p>
+    <div class="gold-divider"></div>
+
+    <div class="trial-layout">
+
+      <!-- Benefits list -->
+      <div class="trial-benefits reveal">
+        <div class="trial-benefit">
+          <div class="trial-benefit-icon">🎯</div>
+          <div class="trial-benefit-text">
+            <h4>No Commitment Needed</h4>
+            <p>Walk in, train hard, and decide. Zero pressure, zero strings attached.</p>
+          </div>
+        </div>
+        <div class="trial-benefit">
+          <div class="trial-benefit-icon">👨‍💼</div>
+          <div class="trial-benefit-text">
+            <h4>Trainer-Guided Session</h4>
+            <p>Your trial includes a guided session with one of our expert trainers.</p>
+          </div>
+        </div>
+        <div class="trial-benefit">
+          <div class="trial-benefit-icon">📋</div>
+          <div class="trial-benefit-text">
+            <h4>Fitness Assessment</h4>
+            <p>Get a quick assessment to understand your current fitness level and goals.</p>
+          </div>
+        </div>
+        <div class="trial-benefit">
+          <div class="trial-benefit-icon">🕐</div>
+          <div class="trial-benefit-text">
+            <h4>Flexible Timing</h4>
+            <p>Choose a slot that works for your schedule — morning, afternoon or evening.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form card -->
+      <div class="form-card reveal reveal-delay-1">
+        <h3>Book Your Free Trial</h3>
+        <p>We'll contact you within 24 hours to confirm your slot.</p>
+
+        <!-- Success state (hidden until form submits) -->
+        <div class="form-success" id="formSuccess" aria-live="polite" role="status">
+          <div class="success-icon">✓</div>
+          <h4>Enquiry Received!</h4>
+          <p>Thank you! We'll call you within 24 hours to schedule your free trial.</p>
+        </div>
+
+        <!-- Form -->
+        <form id="trialForm" novalidate aria-label="Free trial enquiry form">
+          <div class="form-group">
+            <label for="trialName">Full Name *</label>
+            <input
+              type="text"
+              id="trialName"
+              name="name"
+              placeholder="e.g. Rahul Sharma"
+              autocomplete="name"
+              required
+              aria-required="true"
+              aria-describedby="nameError"
+            />
+            <span class="error-msg" id="nameError" role="alert">Please enter your full name.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="trialPhone">Phone Number *</label>
+            <input
+              type="tel"
+              id="trialPhone"
+              name="phone"
+              placeholder="e.g. 9876543210"
+              autocomplete="tel"
+              inputmode="numeric"
+              pattern="[6-9][0-9]{9}"
+              required
+              aria-required="true"
+              aria-describedby="phoneError"
+            />
+            <span class="error-msg" id="phoneError" role="alert">Please enter a valid 10-digit Indian mobile number.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="trialGoal">Your Primary Goal</label>
+            <select id="trialGoal" name="goal" aria-label="Select your primary fitness goal">
+              <option value="">— Select a goal —</option>
+              <option value="weight-loss">Weight Loss</option>
+              <option value="muscle-building">Muscle Building</option>
+              <option value="strength">Strength & Power</option>
+              <option value="endurance">Endurance & Cardio</option>
+              <option value="general">General Fitness</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <p class="form-disclaimer">
+            ℹ️ This form collects your contact details so our team can call you to arrange your free trial.
+            Your information will not be shared with third parties.
+            <strong>No payment is required at this stage.</strong>
+          </p>
+
+          <button type="submit" class="btn btn-gold" id="trialSubmitBtn" style="width:100%; justify-content:center;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            Send Enquiry
+          </button>
+        </form>
+
+      </div><!-- /.form-card -->
+    </div><!-- /.trial-layout -->
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     AI RECEPTIONIST
+     ══════════════════════════════════════════ -->
+<section id="ai-receptionist" aria-labelledby="ai-title">
+  <div class="container">
+    <span class="section-eyebrow">AI Receptionist</span>
+    <h2 class="section-title" id="ai-title">
+      Questions? Ask Our <span>AI Desk</span>
+    </h2>
+    <p class="section-lead">
+      Get instant answers about our gym — anytime, day or night.
+    </p>
+    <div class="gold-divider"></div>
+
+    <div class="ai-layout">
+
+      <!-- Animated visual -->
+      <div class="ai-visual reveal">
+        <div class="ai-circle-outer">
+          <div class="ai-orbit-dot"></div>
+          <div class="ai-orbit-dot"></div>
+          <div class="ai-orbit-dot"></div>
+          <div class="ai-circle-mid">
+            <div class="ai-circle-inner">🤖</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="ai-content reveal reveal-delay-1">
+        <h3>Instant Answers,<br/>Zero Wait Time</h3>
+        <p>
+          Our AI Receptionist can answer your questions about membership plans,
+          gym timings, facilities and more — 24 hours a day, 7 days a week.
+          Simply click the button below to start a conversation.
+        </p>
+
+        <div class="ai-features">
+          <div class="ai-feature">
+            <div class="ai-feature-icon">🕐</div>
+            <div class="ai-feature-text">
+              <h4>Opening Hours</h4>
+              <p>Ask about timings for weekdays, weekends and public holidays.</p>
+            </div>
+          </div>
+          <div class="ai-feature">
+            <div class="ai-feature-icon">💳</div>
+            <div class="ai-feature-text">
+              <h4>Membership Plans</h4>
+              <p>Learn about our Basic, Premium and Elite plans and what's included.</p>
+            </div>
+          </div>
+          <div class="ai-feature">
+            <div class="ai-feature-icon">🏋️</div>
+            <div class="ai-feature-text">
+              <h4>Gym Facilities</h4>
+              <p>Find out what equipment, zones and amenities are available.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- WhatsApp AI trigger (opens WhatsApp with a pre-filled query) -->
+        <button class="btn btn-gold" id="aiChatBtn" style="margin-bottom:16px;" aria-label="Start AI chat on WhatsApp">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Chat with AI Receptionist
+        </button>
+
+        <p class="ai-disclaimer">
+          ⚠️ The AI Receptionist provides general information only. For confirmed bookings, pricing
+          and personalised advice, please contact our staff directly by phone or visit us in person.
+        </p>
+      </div>
+
+    </div><!-- /.ai-layout -->
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+     ══════════════════════════════════════════ -->
+<footer id="footer" aria-label="Site footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Brand column -->
+      <div class="footer-brand">
+        <div class="footer-logo-main">Body Formula</div>
+        <span class="footer-logo-sub">Fitness · Hasthinapuram</span>
+        <p>
+          Your premier fitness destination in Hasthinapuram. We are committed to helping every member
+          build their strongest self through expert coaching and world-class facilities.
+        </p>
+        <div class="footer-socials">
+          <a href="#" class="social-link" id="footer-instagram" aria-label="Instagram" title="Instagram">
+            <!-- Instagram icon -->
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="#" class="social-link" id="footer-facebook" aria-label="Facebook" title="Facebook">
+            <!-- Facebook icon -->
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+          </a>
+          <a href="#" class="social-link" id="footer-youtube" aria-label="YouTube" title="YouTube">
+            <!-- YouTube icon -->
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.57A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.96-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"></path><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"></polygon></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick links -->
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#membership">Membership Plans</a></li>
+          <li><a href="#trainers">Our Trainers</a></li>
+          <li><a href="#facilities">Facilities</a></li>
+          <li><a href="#workout-videos">Workout Videos</a></li>
+          <li><a href="#free-trial">Book Free Trial</a></li>
+          <li><a href="#ai-receptionist">AI Receptionist</a></li>
+        </ul>
+      </div>
+
+      <!-- Opening hours -->
+      <div class="footer-col">
+        <h4>Opening Hours</h4>
+        <ul class="footer-hours">
+          <!-- ↓ EDIT HOURS HERE -->
+          <li>
+            <span>Mon – Fri</span>
+            <span>[5:00 AM – 11:00 PM] <span class="edit-note">← edit</span></span>
+          </li>
+          <li>
+            <span>Saturday</span>
+            <span>[5:00 AM – 10:00 PM] <span class="edit-note">← edit</span></span>
+          </li>
+          <li>
+            <span>Sunday</span>
+            <span>[6:00 AM – 9:00 PM] <span class="edit-note">← edit</span></span>
+          </li>
+          <li>
+            <span>Holidays</span>
+            <span>[7:00 AM – 8:00 PM] <span class="edit-note">← edit</span></span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul class="footer-contact-list">
+          <li>
+            <span class="icon">📍</span>
+            <span>
+              <!-- ↓ EDIT ADDRESS -->
+              [Your Full Address], Hasthinapuram, Chennai<br />
+              <span class="edit-note">← edit in SITE_CONFIG / footer</span>
+            </span>
+          </li>
+          <li>
+            <span class="icon">📞</span>
+            <span>
+              <!-- ↓ EDIT PHONE -->
+              <a href="tel:[PHONE]" id="footer-phone">[Your Phone Number]</a><br />
+              <span class="edit-note">← edit in SITE_CONFIG / footer</span>
+            </span>
+          </li>
+          <li>
+            <span class="icon">✉️</span>
+            <span>
+              <!-- ↓ EDIT EMAIL -->
+              <a href="mailto:[EMAIL]" id="footer-email">[youremail@example.com]</a><br />
+              <span class="edit-note">← edit in SITE_CONFIG / footer</span>
+            </span>
+          </li>
+        </ul>
+      </div>
+
+    </div><!-- /.footer-grid -->
+
+    <div class="footer-bottom">
+      <p>© <span id="currentYear"></span> Body Formula Fitness. All rights reserved.</p>
+      <p class="footer-edit-note">⚠ All prices, hours and contact details are placeholders — please update them.</p>
+    </div>
+
+  </div>
+</footer>
+
+
+<!-- ══════════════════════════════════════════
+     WHATSAPP FLOATING BUTTON
+     ══════════════════════════════════════════ -->
+<a
+  id="whatsapp-btn"
+  href="#"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Enquire on WhatsApp"
+  title="Chat on WhatsApp"
+>
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+  <span class="wa-tooltip">Chat on WhatsApp</span>
+</a>
+
+
+<!-- ══════════════════════════════════════════
+     JAVASCRIPT
+     ══════════════════════════════════════════ -->
+<script>
+// ─────────────────────────────────────────────
+// 1. NAVBAR — scroll effect + hamburger
+// ─────────────────────────────────────────────
+(function () {
+  const navbar   = document.getElementById('navbar');
+  const hamburger = document.getElementById('navHamburger');
+  const mobileMenu = document.getElementById('navMobileMenu');
+  const mobileLinks = mobileMenu.querySelectorAll('.mobile-nav-link');
+
+  // Scroll effect
+  window.addEventListener('scroll', function () {
+    navbar.classList.toggle('scrolled', window.scrollY > 40);
+  }, { passive: true });
+
+  // Toggle mobile menu
+  hamburger.addEventListener('click', function () {
+    const isOpen = hamburger.classList.toggle('open');
+    mobileMenu.classList.toggle('open', isOpen);
+    hamburger.setAttribute('aria-expanded', isOpen);
+    mobileMenu.setAttribute('aria-hidden', !isOpen);
+  });
+
+  // Close mobile menu on link click
+  mobileLinks.forEach(function (link) {
+    link.addEventListener('click', function () {
+      hamburger.classList.remove('open');
+      mobileMenu.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      mobileMenu.setAttribute('aria-hidden', 'true');
+    });
+  });
+})();
+
+
+// ─────────────────────────────────────────────
+// 2. SCROLL REVEAL — Intersection Observer
+// ─────────────────────────────────────────────
+(function () {
+  const revealEls = document.querySelectorAll('.reveal');
+  if (!revealEls.length) return;
+
+  const observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  revealEls.forEach(function (el) { observer.observe(el); });
+})();
+
+
+// ─────────────────────────────────────────────
+// 3. HERO VIDEO FALLBACK
+// ─────────────────────────────────────────────
+(function () {
+  var video = document.getElementById('hero-video');
+  if (!video) return;
+
+  // If the video can't load, hide it (poster image already shows)
+  video.addEventListener('error', function () {
+    video.style.display = 'none';
+  });
+})();
+
+
+// ─────────────────────────────────────────────
+// 4. FREE TRIAL FORM — Validation + Local-only submission
+// ─────────────────────────────────────────────
+(function () {
+  var form       = document.getElementById('trialForm');
+  var successBox = document.getElementById('formSuccess');
+  if (!form) return;
+
+  var nameInput  = document.getElementById('trialName');
+  var phoneInput = document.getElementById('trialPhone');
+  var nameError  = document.getElementById('nameError');
+  var phoneError = document.getElementById('phoneError');
+
+  function validateName() {
+    var valid = nameInput.value.trim().length >= 2;
+    nameInput.classList.toggle('error', !valid);
+    nameError.classList.toggle('visible', !valid);
+    return valid;
+  }
+
+  function validatePhone() {
+    var val = phoneInput.value.trim().replace(/\s/g, '');
+    // Indian mobile: starts with 6–9, exactly 10 digits
+    var valid = /^[6-9][0-9]{9}$/.test(val);
+    phoneInput.classList.toggle('error', !valid);
+    phoneError.classList.toggle('visible', !valid);
+    return valid;
+  }
+
+  nameInput.addEventListener('blur', validateName);
+  phoneInput.addEventListener('blur', validatePhone);
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    var nameOk  = validateName();
+    var phoneOk = validatePhone();
+
+    if (!nameOk || !phoneOk) {
+      // Focus first error
+      if (!nameOk) nameInput.focus();
+      else phoneInput.focus();
+      return;
+    }
+
+    // ── No backend: store locally and show confirmation ──
+    // Note: This does NOT send data to any server.
+    // To connect a backend, replace this block with a fetch() call.
+    var enquiry = {
+      name:      nameInput.value.trim(),
+      phone:     phoneInput.value.trim(),
+      goal:      document.getElementById('trialGoal').value,
+      timestamp: new Date().toISOString(),
+    };
+
+    try {
+      var existing = JSON.parse(localStorage.getItem('bff_enquiries') || '[]');
+      existing.push(enquiry);
+      localStorage.setItem('bff_enquiries', JSON.stringify(existing));
+    } catch (err) {
+      // localStorage not available; that's fine
+    }
+
+    // Show success message, hide form
+    form.style.display = 'none';
+    successBox.classList.add('visible');
+    successBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  });
+})();
+
+
+// ─────────────────────────────────────────────
+// 5. WHATSAPP BUTTON — config-driven
+// ─────────────────────────────────────────────
+(function () {
+  var btn = document.getElementById('whatsapp-btn');
+  var aiBtn = document.getElementById('aiChatBtn');
+  if (!btn) return;
+
+  var number  = (SITE_CONFIG.whatsappNumber || '').trim().replace(/\D/g, '');
+  var message = encodeURIComponent(SITE_CONFIG.whatsappMessage || 'Hi! I have a question about Body Formula Fitness.');
+  var aiMsg   = encodeURIComponent('Hi! I have a question about Body Formula Fitness. Can you help me with: ');
+
+  if (number.length >= 10) {
+    var waUrl   = 'https://wa.me/' + number + '?text=' + message;
+    var aiUrl   = 'https://wa.me/' + number + '?text=' + aiMsg;
+    btn.href    = waUrl;
+    if (aiBtn) {
+      aiBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        window.open(aiUrl, '_blank', 'noopener,noreferrer');
+      });
+    }
+  } else {
+    // No valid number — disable button gracefully
+    btn.classList.add('disabled');
+    btn.setAttribute('href', '#');
+    btn.setAttribute('aria-label', 'WhatsApp enquiry — add phone number in SITE_CONFIG');
+    btn.setAttribute('title', 'Configure whatsappNumber in SITE_CONFIG to enable this button');
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      alert('WhatsApp button is not yet configured.\n\nTo enable it, open index.html and set your whatsappNumber in the SITE_CONFIG section at the top of the <script> block.');
+    });
+    if (aiBtn) {
+      aiBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        alert('WhatsApp is not yet configured.\n\nTo enable it, open index.html and set your whatsappNumber in SITE_CONFIG.');
+      });
+    }
+  }
+})();
+
+
+// ─────────────────────────────────────────────
+// 6. FOOTER YEAR
+// ─────────────────────────────────────────────
+(function () {
+  var el = document.getElementById('currentYear');
+  if (el) el.textContent = new Date().getFullYear();
+})();
+</script>
+
+</body>
+</html>
